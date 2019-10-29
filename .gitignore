@@ -6,4 +6,4 @@ composer.phar
 *.sublime-workspace
 *.project
 .idea/
-
+.phpunit.result.cache
