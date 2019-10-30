@@ -3,7 +3,7 @@
 namespace LexicalTests;
 
 use LexicalTests\TestCase;
-use RatkoR\Crate\Connectors\Connector;
+use Julianmar\Crate\Connectors\Connector;
 
 class ConnectorTest extends TestCase
 {

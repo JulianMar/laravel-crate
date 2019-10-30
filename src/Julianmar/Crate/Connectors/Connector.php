@@ -1,6 +1,6 @@
 <?php
 
-namespace RatkoR\Crate\Connectors;
+namespace Julianmar\Crate\Connectors;
 
 use Illuminate\Database\Connectors\Connector AS BaseConnector;
 use Illuminate\Database\Connectors\ConnectorInterface;

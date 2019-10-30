@@ -1,6 +1,6 @@
 <?php
 
-namespace RatkoR\Crate\Query\Grammars;
+namespace Julianmar\Crate\Query\Grammars;
 
 use Illuminate\Database\Query\Builder;
 

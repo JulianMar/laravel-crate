@@ -1,6 +1,6 @@
 ## Crate.io driver for Laravel 5
 
-This is a fork of [this](https://github.com/RatkoR/laravel-crate.io) repo  
+This is a fork of [RatkoR](https://github.com/RatkoR/laravel-crate.io) repo. He did an amazing Job with the Driver but it is not maintained anymore
 
 This is an Eloquent and Query builder support for Crate.io. Extends
 the original Laravel API with Crate PDO driver.
@@ -142,7 +142,7 @@ See more about fetch types on their [github](https://github.com/crate/crate-pdo)
 Crate.io supports many of the SQL statements, but not all of them. Be sure to
 take a look at their [site](https://crate.io/docs/stable/sql/index.html) if you're in doubt.
 
-We're throwing an `RatkoR\Crate\NotImplementedException` for those statements that you
+We're throwing an `Julianmar\Crate\NotImplementedException` for those statements that you
 might wrongly try to use. We tried to cover all of them, but if we missed any
 you'll get Exception from Crate DB.
 
@@ -341,7 +341,7 @@ $users = DB::table('user')->get();
 To use Eloquent you'll need to use Crate Eloquent model.
 
 ```php
-use RatkoR\Crate\Eloquent\Model AS Eloquent;
+use Julianmar\Crate\Eloquent\Model AS Eloquent;
 
 class Article extends Eloquent {}
 ```
@@ -361,13 +361,13 @@ etc...
 Instead of adding
 
 ```php
-use RatkoR\Crate\Eloquent\Model AS Eloquent;
+use Julianmar\Crate\Eloquent\Model AS Eloquent;
 ```
 
 to all your eloquent classes, you can add an alias to `alias` array in `config/app.php`:
 
 ```php
-'CrateEloquent' => 'RatkoR\Crate\Eloquent\Model'
+'CrateEloquent' => 'Julianmar\Crate\Eloquent\Model'
 ```
 
 This will allow you to shorten the class definition to:
@@ -557,7 +557,7 @@ Add `prefix` key to your crate configuration to use it.
 -   geoShape
 -   ip
 
-See [commit](https://github.com/RatkoR/laravel-crate.io/pull/10/commits/138289591e291aceb718e27a95123342be09b45b)
+See [commit](https://github.com/Julianmar/laravel-crate.io/pull/10/commits/138289591e291aceb718e27a95123342be09b45b)
 and official crate [docs](https://crate.io/a/geo-shapes-in-crate/)
 
 ### Tests

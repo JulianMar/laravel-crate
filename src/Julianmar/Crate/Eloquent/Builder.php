@@ -1,6 +1,6 @@
 <?php
 
-namespace RatkoR\Crate\Eloquent;
+namespace Julianmar\Crate\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder as BaseBuilder;
 

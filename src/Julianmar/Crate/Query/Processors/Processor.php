@@ -1,6 +1,6 @@
 <?php
 
-namespace RatkoR\Crate\Query\Processors;
+namespace Julianmar\Crate\Query\Processors;
 
 use Illuminate\Database\Query\Builder;
 

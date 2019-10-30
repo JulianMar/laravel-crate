@@ -4,11 +4,11 @@ namespace LexicalTests;
 
 use LexicalTests\TestCase;
 use Illuminate\Support\Fluent;
-use RatkoR\Crate\Schema\Blueprint;
-use RatkoR\Crate\Connectors\Connector;
-use RatkoR\Crate\Schema\Grammars\Grammar;
-use RatkoR\Crate\Connection;
-use RatkoR\Crate\NotImplementedException;
+use Julianmar\Crate\Schema\Blueprint;
+use Julianmar\Crate\Connectors\Connector;
+use Julianmar\Crate\Schema\Grammars\Grammar;
+use Julianmar\Crate\Connection;
+use Julianmar\Crate\NotImplementedException;
 
 class BlueprintTest extends TestCase {
 
@@ -157,7 +157,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $return = $blueprint->dropIndex();
     }
@@ -169,7 +169,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->binary('f_binary');
     }
@@ -181,7 +181,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->dropPrimary();
     }
@@ -193,7 +193,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->dropUnique('index1');
     }
@@ -205,7 +205,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->dropIndex('index1');
     }
@@ -217,7 +217,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->dropForeign('index1');
     }
@@ -229,7 +229,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->foreign('index1');
     }
@@ -241,7 +241,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->unique('index1');
     }
@@ -303,7 +303,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->create();
         $blueprint->integer('f_id');
@@ -319,7 +319,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->create();
         $blueprint->integer('_score');
@@ -335,7 +335,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->create();
         $blueprint->integer('nbItems');
@@ -351,7 +351,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->dropColumn('f_string');
     }
@@ -363,7 +363,7 @@ class BlueprintTest extends TestCase {
     {
         $blueprint = new Blueprint('testtable');
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $blueprint->renameColumn('f_string','t_to');
     }
@@ -377,7 +377,7 @@ class BlueprintTest extends TestCase {
 
         $blueprint->string('f_string', 50)->change();
 
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $def = $blueprint->toSql($this->connection, $this->grammar);
     }

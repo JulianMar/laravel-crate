@@ -15,7 +15,7 @@ class TestCase extends \Orchestra\Testbench\TestCase {
     protected function getPackageProviders($app)
     {
         return [
-            'RatkoR\Crate\CrateServiceProvider',
+            'Julianmar\Crate\CrateServiceProvider',
         ];
     }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace RatkoR\Crate\Schema\Grammars;
+namespace Julianmar\Crate\Schema\Grammars;
 
-use RatkoR\Crate\Schema\Blueprint;
+use Julianmar\Crate\Schema\Blueprint;
 use Illuminate\Support\Fluent;
-use RatkoR\Crate\Connection;
+use Julianmar\Crate\Connection;
 
 class Grammar extends \Illuminate\Database\Schema\Grammars\Grammar
 {
@@ -162,7 +162,7 @@ class Grammar extends \Illuminate\Database\Schema\Grammars\Grammar
     /**
      * Returns index fields for all fulltext indexes.
      *
-     * @param \RatkoR\Crate\Schema\Blueprint $blueprint
+     * @param \Julianmar\Crate\Schema\Blueprint $blueprint
      * @return array
      */
     protected function getIndexes(Blueprint $blueprint)

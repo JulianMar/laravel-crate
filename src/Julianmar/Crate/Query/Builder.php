@@ -1,9 +1,9 @@
 <?php
 
-namespace RatkoR\Crate\Query;
+namespace Julianmar\Crate\Query;
 
 use Illuminate\Database\Query\Builder as BaseBuilder;
-use RatkoR\Crate\NotImplementedException;
+use Julianmar\Crate\NotImplementedException;
 use Closure;
 
 class Builder extends BaseBuilder

@@ -1,9 +1,9 @@
 <?php
 
-namespace RatkoR\Crate\Eloquent;
+namespace Julianmar\Crate\Eloquent;
 
 use Illuminate\Database\Eloquent\Model as BaseModel;
-use RatkoR\Crate\Query\Builder as QueryBuilder;
+use Julianmar\Crate\Query\Builder as QueryBuilder;
 
 class Model extends BaseModel
 {
@@ -33,7 +33,7 @@ class Model extends BaseModel
         $connection = $this->getConnection();
 
         // Check the connection type
-        if ($connection instanceof \RatkoR\Crate\Connection) {
+        if ($connection instanceof \Julianmar\Crate\Connection) {
             $grammar = $connection->getQueryGrammar();
             return new QueryBuilder($connection, $grammar, $connection->getPostProcessor());
         }

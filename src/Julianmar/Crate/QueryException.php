@@ -1,6 +1,6 @@
 <?php
 
-namespace RatkoR\Crate;
+namespace Julianmar\Crate;
 
 use Illuminate\Database\QueryException as BaseQueryException;
 use Illuminate\Support\Str;

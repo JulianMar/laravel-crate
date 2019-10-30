@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">7.2",
-        "ext-pdo":  "*",
+        "ext-pdo": "*",
         "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0",
         "illuminate/database": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0",
         "crate/crate-dbal": "^2.0"
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "RatkoR\\Crate": "src/"
+            "Julianmar\\Crate": "src/"
         }
     },
     "autoload-dev": {
@@ -34,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RatkoR\\Crate\\CrateServiceProvider"
+                "Julianmar\\Crate\\CrateServiceProvider"
             ]
         }
     }

@@ -3,14 +3,14 @@
 namespace LexicalTests;
 
 use LexicalTests\TestCase;
-use RatkoR\Crate\Connection;
-use RatkoR\Crate\NotImplementedException;
+use Julianmar\Crate\Connection;
+use Julianmar\Crate\NotImplementedException;
 use Mockery as m;
 use Illuminate\Database\ConnectionInterface;
-use RatkoR\Crate\Query\Processors\Processor;
-use RatkoR\Crate\Query\Grammars\Grammar;
-use RatkoR\Crate\Query\Builder;
-use RatkoR\Crate\Connectors\Connector;
+use Julianmar\Crate\Query\Processors\Processor;
+use Julianmar\Crate\Query\Grammars\Grammar;
+use Julianmar\Crate\Query\Builder;
+use Julianmar\Crate\Connectors\Connector;
 
 class QueryTest extends TestCase {
 
@@ -28,7 +28,7 @@ class QueryTest extends TestCase {
     protected function setBuilder()
     {
         $grammar = new Grammar;
-        $processor = m::mock('\RatkoR\Crate\Query\Processors\Processor');
+        $processor = m::mock('\Julianmar\Crate\Query\Processors\Processor');
 
         return new Builder(m::mock('\Illuminate\Database\ConnectionInterface'), $grammar, $processor);
     }
@@ -56,7 +56,7 @@ class QueryTest extends TestCase {
      */
     public function it_throws_exception_for_join()
     {
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $this->builder->select('*')
             ->from('users')
@@ -69,7 +69,7 @@ class QueryTest extends TestCase {
      */
     public function it_throws_exception_for_whereBetween()
     {
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $this->builder->select('*')->from('users')->whereBetween('id',[1,2]);
     }
@@ -79,7 +79,7 @@ class QueryTest extends TestCase {
      */
     public function it_throws_exception_for_whereExists()
     {
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $this->builder->select('*')->from('users')->whereExists(function() {});
     }
@@ -89,7 +89,7 @@ class QueryTest extends TestCase {
      */
     public function it_throws_exception_for_selectSub()
     {
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $this->builder->select('*')->from('users')->selectSub(function() {},'a');
     }
@@ -99,7 +99,7 @@ class QueryTest extends TestCase {
      */
     public function it_throws_exception_for_joins()
     {
-        $this->expectException(\RatkoR\Crate\NotImplementedException::class);
+        $this->expectException(\Julianmar\Crate\NotImplementedException::class);
 
         $this->builder->select('*')->from('users')->where('id', '=', 1);
         $this->builder->union($this->setBuilder()->select('*')->from('users')->where('id', '=', 2));

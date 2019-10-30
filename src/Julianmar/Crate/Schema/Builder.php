@@ -1,8 +1,8 @@
 <?php
 
-namespace RatkoR\Crate\Schema;
+namespace Julianmar\Crate\Schema;
 
-use RatkoR\Crate\Schema\Blueprint;
+use Julianmar\Crate\Schema\Blueprint;
 use Closure;
 
 class Builder extends \Illuminate\Database\Schema\Builder

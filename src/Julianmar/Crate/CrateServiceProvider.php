@@ -1,10 +1,10 @@
 <?php
 
-namespace RatkoR\Crate;
+namespace Julianmar\Crate;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Model;
-use RatkoR\Crate\Connectors\Connector;
+use Julianmar\Crate\Connectors\Connector;
 
 class CrateServiceProvider extends ServiceProvider
 {

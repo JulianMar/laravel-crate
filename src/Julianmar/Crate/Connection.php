@@ -1,16 +1,16 @@
 <?php
 
-namespace RatkoR\Crate;
+namespace Julianmar\Crate;
 
 use Closure;
 use Exception;
-use RatkoR\Crate\Schema\Builder;
+use Julianmar\Crate\Schema\Builder;
 use Crate\DBAL\Driver\PDOCrate\Driver as DoctrineDriver;
-use RatkoR\Crate\Query\Grammars\Grammar as QueryGrammar;
-use RatkoR\Crate\Schema\Grammars\Grammar as SchemaGrammar;
+use Julianmar\Crate\Query\Grammars\Grammar as QueryGrammar;
+use Julianmar\Crate\Schema\Grammars\Grammar as SchemaGrammar;
 use Crate\PDO\PDO;
-use RatkoR\Crate\Query\Builder as QueryBuilder;
-use RatkoR\Crate\QueryException as QueryException;
+use Julianmar\Crate\Query\Builder as QueryBuilder;
+use Julianmar\Crate\QueryException as QueryException;
 
 class Connection extends \Illuminate\Database\Connection
 {

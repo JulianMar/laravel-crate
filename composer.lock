@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "113a4abf6743e8fc2e19188d8473e785",
+    "content-hash": "5fe265c86ad5fdb526adb85a3ded208c",
     "packages": [
         {
             "name": "crate/crate-dbal",

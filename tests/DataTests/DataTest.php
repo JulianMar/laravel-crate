@@ -318,7 +318,7 @@ class DataTest extends TestCase {
         $foo = new stdClass();
         $foo->bar = 'test';
 
-        $this->expectException(\RatkoR\Crate\QueryException::class);
+        $this->expectException(\Julianmar\Crate\QueryException::class);
         $this->expectExceptionMessage('Cannot cast {"bar"=\'test\'} to type string');
 
         User::create(['id'=>1,'name'=> $foo,'email'=>'user1@example.com']);

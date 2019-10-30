@@ -2,7 +2,7 @@
 
 namespace DataTests\Models;
 
-use RatkoR\Crate\Eloquent\Model AS Eloquent;
+use Julianmar\Crate\Eloquent\Model AS Eloquent;
 
 class User extends Eloquent
 {

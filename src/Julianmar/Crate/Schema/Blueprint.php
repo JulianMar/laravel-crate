@@ -1,11 +1,11 @@
 <?php
 
-namespace RatkoR\Crate\Schema;
+namespace Julianmar\Crate\Schema;
 
 use Closure;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Grammars\Grammar;
-use RatkoR\Crate\NotImplementedException;
+use Julianmar\Crate\NotImplementedException;
 
 class Blueprint extends \Illuminate\Database\Schema\Blueprint {
 

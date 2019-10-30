@@ -1,6 +1,6 @@
 <?php
 
-namespace RatkoR\Crate;
+namespace Julianmar\Crate;
 
 class NotImplementedException extends \Exception
 {
