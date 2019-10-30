@@ -33,7 +33,7 @@ Laravel 5.5 till 6 is supported
 Add a require to your composer.json :
 
 ```bash
-    composer require julianmar/laravel-crate.io
+    composer require julianmar/laravel-crate.io:^1.0
 ```
 
 Laravel 5.5+ uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
