@@ -1,4 +1,4 @@
-## Crate.io driver for Laravel 5
+## Crate.io driver for Laravel 6
 
 This is a fork of [RatkoR](https://github.com/RatkoR/laravel-crate.io) repo. He did an amazing Job with the Driver but it is not maintained anymore
 
